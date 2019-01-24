@@ -1,0 +1,10 @@
+<p><b><font size="+5">Who Shouted?</font></b></p>
+{% if output %}
+    <ul>
+    {% for out in output %}
+        <li>{{ out }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No shout are available.</p>
+{% endif %}

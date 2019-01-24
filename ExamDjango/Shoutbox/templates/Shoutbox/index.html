@@ -1,0 +1,8 @@
+<p><b><font size="+5">Little Shoutbox</font></b></p>
+
+<form action="{% url 'Shoutbox:submit' %}" method="POST">
+  {% csrf_token %}
+  <p>Name: <input type="text" name="name"></p>
+  <p>Shout: <input type="text" name="text"></p>
+  <p><input type="submit" value="Submit"></p>
+</form>
